@@ -11,7 +11,10 @@ function FullNameDisplay() {
 
   const handleSubmit = (e)=>{
     e.preventDefault();
-    setIsVisible(true);
+    if(formData.fname !== "" && formData.lname !== "") {
+
+      setIsVisible(true);
+    }
   }
   return <>
     <h1>Full Name Display</h1>
