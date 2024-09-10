@@ -29,7 +29,7 @@ function FullNameDisplay() {
       <button type="submit" >Submit</button>
     </form>
 
-    <h3>Full Name: {isVisible?`${formData.fname} ${formData.lname}`:""}</h3>
+    {isVisible&&<h3>Full Name: {`${formData.fname} ${formData.lname}`}</h3>}
   </>
 }
 
